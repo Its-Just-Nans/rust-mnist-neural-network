@@ -5,11 +5,11 @@ This is a rewrite in rust of this great video <https://www.youtube.com/watch?v=w
 Infos:
 
 - with more epochs, the accuracy will increase, but the training time will also increase.
-- full run takes 25 seconds (on my computer)
+- full run takes 25 seconds (on my computer with `--release`)
 
 ## Usage
 
-- Download the MNIST dataset as `train.csv` (default name) (from [kaggle](https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv) for example).
+- Download the MNIST dataset as `train.csv` (the default name) from [kaggle](https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv) (for example).
 - run `cargo run` to run the program
 - run `cargo run --release -- data.csv` for faster execution and to use a different filename
 - see below for example output
