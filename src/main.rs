@@ -1,5 +1,6 @@
 //! rust-mnist-neural-network
-//! https://github.com/Its-Just-Nans/rust-mnist-neural-network
+//! Simple MNIST NN from scratch in rust inspired by https://www.youtube.com/watch?v=w8yWXqWQYmU
+//! repo at https://github.com/Its-Just-Nans/rust-mnist-neural-network
 
 use csv::ReaderBuilder;
 use ndarray::prelude::{s, Array1, Array2, Axis};
@@ -216,13 +217,14 @@ fn main() {
     let (w1, b1, w2, b2) = gradient_descent(&data_train, &label_train, learning_rate, epochs);
     println!("🟢Training complete!");
 
+    // Test the model
     println!("🟠Testing on test set...");
     let (_, _, _, a2) = forward_propagation(&data_test, &w1, &b1, &w2, &b2);
-    // Convert softmax output to predicted class (argmax along axis 0)
     let predictions = get_predictions(&a2);
     let (_, accuracy) = get_correct_predictions(&predictions, &label_test);
     println!("🟢Accuracy on test set: {:.2}%", accuracy * 100.0);
 
+    // Show some predictions
     println!("🟠Showing some predictions (on test set)...");
     for idx_test in 0..3 {
         let x_actual = data_test.row(idx_test).to_owned();
