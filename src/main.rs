@@ -209,7 +209,7 @@ fn main() {
     let learning_rate = 0.01;
     let epochs = 200;
     println!(
-        "🟠Training model with {} epochs and a {} learing rate on {} data...",
+        "🟠Training model with {} epochs and a {} learning rate on {} data...",
         epochs,
         learning_rate,
         data_train.nrows()

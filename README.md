@@ -46,7 +46,7 @@ Data loaded: 42000 rows
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 🟢Loading complete (test size = 1000)
-🟠Training model with 200 epochs and a 0.01 learing rate on 41000 data...
+🟠Training model with 200 epochs and a 0.01 learning rate on 41000 data...
 Epoch 000: accuracy = 9.50%
 Epoch 010: accuracy = 36.78%
 Epoch 020: accuracy = 52.45%
